@@ -7,15 +7,17 @@ public class javaSnack5 {
 		int minNum = arr[0];
         int sum = 0;
         float avg = 0;
-	    for (int j : arr) {
-	            if (j > maxNum)
-	                maxNum = j;
-	            if(j < minNum) 
-		        	minNum = j;
-	    }
+	    
 	    for(int i=0; i<arr.length; i++) {
+	    	int number = arr[i];
 	    	sum += arr[i];
 	    	avg = sum / (float)arr.length;
+	    	if(number > maxNum ) {
+	    		maxNum = number;
+	    	}
+	    	if(number < minNum) {
+	    		minNum = number;
+	    	}
 	    }
      
 	    System.out.println("Numero minimo = " + minNum);
