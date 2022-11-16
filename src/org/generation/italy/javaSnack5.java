@@ -15,7 +15,7 @@ public class javaSnack5 {
 	    }
 	    for(int i=0; i<arr.length; i++) {
 	    	sum += arr[i];
-	    	avg = sum / 10f;
+	    	avg = sum / (float)arr.length;
 	    }
      
 	    System.out.println("Numero minimo = " + minNum);

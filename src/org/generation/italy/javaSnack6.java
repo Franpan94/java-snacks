@@ -12,13 +12,13 @@ public class javaSnack6 {
 		int sum = 0;
 		int sum1 = 0;
 		int sum2 = 0;
-		double avg = 0;
+		float avg = 0;
 		System.out.println("Sommatoria: ");
 		for(int i=0; i<arr3.length; i++) {
 			arr3[i] = arr1[i] + arr2[i];
 			System.out.println(arr3[i]);
 			sum += arr3[i];
-			avg = sum/10d;
+			avg = sum/(float)(arr1.length + arr2.length);
 			sum1 += arr1[i];
 			sum2 += arr2[i];
 		}
