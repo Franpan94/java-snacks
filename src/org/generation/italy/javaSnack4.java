@@ -9,7 +9,7 @@ public class javaSnack4 {
 		Random rnd = new Random();
 		int [] arr = new int [bigArr.length - smallArr.length];
 		for(int i=0; i<arr.length; i++) {
-			int arrIndex = rnd.nextInt(arr.length);
+			int arrIndex = rnd.nextInt(100);
 			System.out.println(arrIndex);
 		}
 	}
